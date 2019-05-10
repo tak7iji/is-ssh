@@ -27,11 +27,13 @@ var input = [
     // Git Transport Protocol
   , ["git://host.xz/path/to/repo.git/", false]
   , ["git://host.xz/~user/path/to/repo.git/", false]
+  , ["git://user@host:path/to/repo.git",false]
 
     // HTTP/S Transport Protocol
   , ["http://host.xz/path/to/repo.git/", false]
   , ["https://host.xz/path/to/repo.git/", false]
-
+  , ["http://host:port/path/to/repo.gi", false]
+    
     // Local (Filesystem) Transport Protocol
   , ["/path/to/repo.git/", false]
   , ["path/to/repo.git/", false]
